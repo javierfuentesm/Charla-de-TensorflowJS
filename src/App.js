@@ -86,7 +86,7 @@ const App = () => {
           </>
         )}
         <button onClick={() => setShouldClassify(!shouldClassify)}>
-          {shouldClassify ? "Dejar de monitorear" : "Empezar a Monitorear"}
+          {shouldClassify ? "Dejar de clasificar" : "Empezar a clasificar"}
         </button>
         <video
           ref={videoRef}
