@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import ml5 from "ml5";
 import leon from "./leon.jpg";
@@ -31,9 +30,9 @@ function App() {
         <img src={leon} ref={imgRef} id="image" width="400" alt="" />
         {predictions.length > 0 && (
           <>
-            {predictions.map(({ label, condifence }, index) => (
-              <div key={index + ""}>
-                {index + 1}. Prediction: {label} at {condifence}{" "}
+            {predictions.map(({ label, confidence }, index) => (
+              <div key={index}>
+                {index + 1}. Predicción: {label} con {confidence.toFixed(2)}
               </div>
             ))}
           </>
