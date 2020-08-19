@@ -6,7 +6,7 @@ import GaugeChart from "react-gauge-chart";
 
 let classifier;
 
-function App() {
+const App = () => {
   const videoRef = useRef();
   const [gaugeData, setGaugeData] = useState(false);
   const [shouldClassify, setShouldClassify] = useState(false);
@@ -72,7 +72,7 @@ function App() {
                 probabilidad :
               ${gaugeData[Object.keys(gaugeData)[1]].confidence?.toFixed(2)}
               `}
-               ]
+              ]
             </small>
             <GaugeChart
               id="gauge-chart4"
@@ -97,6 +97,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
