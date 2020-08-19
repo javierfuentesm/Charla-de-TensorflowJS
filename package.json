@@ -9,6 +9,7 @@
     "ml5": "^0.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-gauge-chart": "^0.2.5",
     "react-scripts": "3.4.3"
   },
   "scripts": {
