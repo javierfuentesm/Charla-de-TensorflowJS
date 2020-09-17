@@ -14,7 +14,7 @@ function App() {
 
     const result = await classifier.predict(
       imgRef.current,
-      5,
+      6,
       (err, results) => results
     );
     setPredictions(result);
